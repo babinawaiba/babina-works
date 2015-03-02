@@ -1,0 +1,53 @@
+.container
+{
+
+	min-height: 1000px;
+	width: 90%;
+}
+
+h1
+{
+text-align: center;
+color: white;
+
+}
+h2
+{
+	color: rgb(255,0,0);
+	text-align: center;
+}
+
+body
+{
+	
+	padding: 0px;
+}
+
+#header
+{
+	background-color: #fff;
+	height: ;
+
+
+}
+
+#content
+{
+
+	background-color: green;
+}
+
+#footer
+{
+	background-color: yellow;
+
+}
+
+#menubar
+{
+	background-color: red;
+	
+}
+#menubar ul li{list-style: none;float: left;padding: 15px;}
+#logo{height: 115px;border: 1px dotted #000000;}
+#clear{clear: both;}

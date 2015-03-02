@@ -11,11 +11,11 @@
           <!-- Content goes below this -->
             <?php
            
-             if($_GET['status'] == 'success')
+             if(isset($_GET['status'])&&$_GET['status'] == 'success')
              { ?>
                 <div class="alert alert-success" role="alert">Birth Registration Added Successfully</div>
             <?php }
-             else if($_GET['status'] == 'failed')
+             else if(isset($_GET['status'])&&$_GET['status'] == 'failed')
              { ?>
                 <div class="alert alert-danger" role="alert">Birth Registration Failed</div>
 

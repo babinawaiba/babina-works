@@ -1,8 +1,8 @@
 <?php 
 // echo '<pre>';
 // print_r($_POST);exit;
-include 'class/dbconn.class.php';
-$obj_birth = new dbconn;
+include 'class/birth-reg-class.php';
+$obj_birth = new birthReg;
 
 
 if(array_key_exists('form_id', $_POST) && $_POST['form_id']=='editbirthregistration')
@@ -64,10 +64,27 @@ if(array_key_exists('form_id', $_POST) && $_POST['form_id']=='addbirthregistrati
 
 }
 
-if(array_key_exists('edit_birthid', $_GET))
+if(array_key_exists('delete_birthid', $_GET))
 {
-	$birth_id = $_GET['edit_birthid'];
+	$birth_id = $_GET['delete_birthid'];
+	$result=$obj_birth->deleteBirthRegistration($birth_id);
+	if($result)
+	{
+		$obj_birth->redirect('birth-registration.php?status=success');
+
+	}
+	else 
+	{
+		$obj_birth->redirect('birth-registration.php?status=failed');
+
+
+	}
+
+
 }
+
+
+
 
 
 

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
-    <title>Welcome to Admin Section</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>this is about us page.</title>
 
     <!-- Bootstrap -->
     <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -17,36 +19,15 @@
     <!-- <link href="css/style.css" rel="stylesheet"> -->
     <link href="css/frontendstyle.css" rel="stylesheet">
   </head>
+  
   <body>
-    <div id="container">
-      <div id="header">
-        <div id="logo"><a href = "homepage.php"><img src = "images/logo.png" height = "100px"/></a>
-        
-        </div>
-      </div>
-
-      <div id="navbar">
-          <ul>
-            <li><a class = "active" href = "homepage.php" title = "this is a home page">Home</a></li>
-            <li><a href = "aboutus.php" title = "this is about us page">About Us</a></li>
-            <li><a href= "gallery.php" title = "this is a gallery">Gallery</a></li>
-            <li><a href="news.php" title = "this is news page">News</a></li>
-          </ul>
-      </div>
-
-      <div class="clear"></div>
-      <div id="rightsidebar"><p>this is right sidebar</p></div>
-      <div id="leftsidebar">this is left sidebar</div>
-      <div id="footer">copyright</div>
+    <div class="container">
+      <h1>Welcome to front end!</h1>
+      <p class="">This is class example.</p>
+  
 
 
-
-
-    </div>
-
-
-
-    
+    </div> <!-- /container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js "></script>

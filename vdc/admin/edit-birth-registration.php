@@ -1,7 +1,7 @@
 <?php 
 include 'header.php';
-include 'class/dbconn.class.php';
-$editobj = new dbconn;
+include 'class/birth-reg-class.php';
+$editobj = new birthReg;
 $birth_id = $_GET['id'];
 $result = $editobj->getBirthRegistrationById($birth_id);
 
@@ -17,17 +17,17 @@ $result = $editobj->getBirthRegistrationById($birth_id);
           <h1 class="page-header">Edit Birth Registration</h1>
 
           <!-- Content goes below this -->
-            <?php
+             <?php
            
-             if($_GET['status'] == 'success')
+             if(isset($_GET['status'])&&$_GET['status'] == 'success')
              { ?>
-                <div class="alert alert-success" role="alert">Birth Registration Updated Successfully</div>
+                <div class="alert alert-success" role="alert">Birth Registration Added Successfully</div>
             <?php }
-             else if($_GET['status'] == 'failed')
+             else if(isset($_GET['status'])&&$_GET['status'] == 'failed')
              { ?>
-                <div class="alert alert-danger" role="alert">Birth Registration Update Failed</div>
+                <div class="alert alert-danger" role="alert">Birth Registration Failed</div>
 
-            <?php } 
+            <?php }
             ?>
             
             

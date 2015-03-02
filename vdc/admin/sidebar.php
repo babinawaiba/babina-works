@@ -6,7 +6,8 @@
             <li><a href="#">Export</a></li> 
           </ul>-->
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="birth-registration.php">Birth Registration<span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="birth-registration.php">Birth Registration<span class="sr-only">(current)</span></a></li><BR>
+             <li class="active"><a href="marriage-registration.php">Marriage Registration<span class="sr-only">(current)</span></a></li>
             <!-- <li><a href="">Nav item again</a></li>
             <li><a href="">One more nav</a></li>
             <li><a href="">Another nav item</a></li>
