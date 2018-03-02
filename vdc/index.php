@@ -35,14 +35,15 @@
       </div>
 
       <div class="clear"></div>
-      <div id="rightsidebar"><p>this is right sidebar</p></div>
-      <div id="leftsidebar">this is left sidebar</div>
-      <div id="footer">copyright</div>
+      <div class="rightsidebar"><p>this is right sidebar</p></div>
+      <div class="leftsidebar">this is left sidebar</div>
+      <div class="footer">copyright</div>
 
 
 
 
     </div>
+
 
 
 

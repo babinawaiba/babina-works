@@ -1,9 +1,8 @@
 body{padding: 0px;margin: 0px; background: #ccc;}
 #container
 {
-	min-height: 1000px;
 	background: #ececec;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 
 }
@@ -51,3 +50,24 @@ body{padding: 0px;margin: 0px; background: #ccc;}
 
 
 .clear {clear: both;}
+
+.leftsidebar {
+  min-height: 500px;
+  width: 150px;
+  border: 1px solid #cfcfcf;
+}
+
+.rightsidebar {
+  min-height: 500px;
+  width: 150px;
+  border: 1px solid #cfcfcf;
+  float: right;
+
+}
+
+.footer {
+  min-height: 100px;
+  width: 100%;
+  border: 1px solid #cfcfcf;
+}
+
