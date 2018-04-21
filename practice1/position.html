@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+	border:1px solid;
+}
+
+#first {
+    height: 200px;
+    width: 100px;
+}
+
+.floatleft { float: left; }
+
+#second {
+ height: 150px;
+ width: 100px;
+}
+
+#third {
+	height: 75px;
+	width: 200px;
+}
+
+#fourth {
+ height: 150px;
+ width: 100px;
+}
+
+#fifth {
+	height: 70px;
+	width: 50px;
+}
+
+#sixth {
+
+}
+
+.clear {
+	clear: both;
+}
+
+</style>
+</head>
+<body>
+<div>
+<div id="first" class="floatleft">first</div>
+
+<div id="second" class="floatleft">second</div>
+<div class="floatleft">
+	<div id="third">third</div>
+	<div id="fifth">fifth</div>
+
+</div>
+<div id="fourth" class="clear">fourth</div>
+<div id="sixth" class="floatleft">sixth</div>
+
+
+
+<p>With absolute positioning, an element can be placed anywhere on a page. The heading below is placed 100px from the left of the page and 150px from the top of the page.</p>
+</div>
+</body>
+</html>

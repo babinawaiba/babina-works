@@ -1,140 +1,59 @@
+
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
+<html lang="en">
 <head>
-	<title>this is my first practice..</title>
-	<style>
-	a:link{
-		border: 2px solid green;
-		background: pink;
-		color:black;
-	}
-
-	
-	a:hover{
-		color:blue;
-	}
-
-	ul{
-		list-style-type: none;
-
-
-
-	}
-	
-	li:before{
-		content: "*";
-		padding-right: 10px;
-	}
-	li:nth-child(3){
-		background: red;
-
-	}
-	li{
-		display: block;
-		visibility: hidden;
-		
-	}
-
-	div{
-		border: 2px solid black;
-		border-radius: 25px;
-		width: 300px;
-		margin-left: 100px;
-	}
-	div p{
-		margin-left: inherit;
-	}
-	#customers{
-		border: 2px solid green;
-		border-collapse: collapse;
-		width: 100%;
-	}
-
-	#customers td, #customers th{
-		border: 1px solid black;
-		padding: 5px;
-		
-		
-	}
-
-	#customers th{
-		text-align: center;
-	}
-
-	#customers td{
-		height: 50px;
-		vertical-align: bottom;
-	}
-
-	#customers tr:nth-last(3n+2)
-	{
-		background-color: lightblue;
-	} 
-
-	#customers tr:hover{
-		background-color:grey;
-	}
-
-
-	
-	</style>
-	
-	
-	
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+  html,body{
+    width: 100%;
+    height: 100%;
+  }
+  .navbar{
+    background-color: #23415C;
+    padding: 10px 0px;
+    font-size: 1.2em;
+    border-radius: 0px;
+  }
+  .navbar-brand{
+    padding: 0px;
+    margin-top: -72px;
+  }
+  .navbar li a:hover{
+    color: black;
+   
+  }
+</style>
 </head>
 <body>
-
-	<p title="tooltip"> this shows the value of title when hover</p>
-	
-	<a href="www.w3school.com" target="_blank">this is the link</a>
-	<h1>styling list with colors...</h1>
-		<ul><h3>fruits</h3>
-			<li>apple</li>
-			<li>banana</li>
-			<li>orange</li>
-
-
-		</ul>
-	<div>
-		<p>
-		You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins:
-		
-		</p>		
-	</div>
-	<table id="customers">
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Berglunds snabbköp</td>
-    <td>Christina Berglund</td>
-    <td>Sweden</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
+  <!--navigation-->
+    <nav class="navbar navbar-inverse navbar-fixed">
+      <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target=#myNavbar>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand"><img src="images/logo"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Activities</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    
  
-</table>
-	
-	
+
 </body>
-</html>	
+</html>
