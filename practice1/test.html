@@ -6,54 +6,144 @@
   <title></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-  html,body{
-    width: 100%;
-    height: 100%;
-  }
-  .navbar{
-    background-color: #23415C;
-    padding: 10px 0px;
-    font-size: 1.2em;
-    border-radius: 0px;
-  }
-  .navbar-brand{
-    padding: 0px;
-    margin-top: -72px;
-  }
-  .navbar li a:hover{
-    color: black;
-   
-  }
-</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
+ 
+  <!-- custom css -->
+  <style>
+    div.carousel-item img {
+      height: 400px;
+      width: 100%;
+    }
+
+    .carousel-text {
+      position: absolute;
+      top: 25%;
+      margin: 0 auto;      
+      font-size: 60px;
+      color: #ffffff;
+      background-color: #000000aa;
+      padding: 15px;
+    }
+
+  </style>
+  <!-- eof custom -->
 </head>
 <body>
-  <!--navigation-->
-    <nav class="navbar navbar-inverse navbar-fixed">
-      <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target=#myNavbar>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="#" class="navbar-brand"><img src="images/logo"></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Activities</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
+  <!-- navigation -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+  <a class="navbar-brand" href="#">My Website</a>
+  <button class="navbar-toggler" type="button" data-target="#myId" data-toggle="collapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="myId">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link active">Home</a>
+      </li>
+       <li class="nav-item">
+        <a href="#" class="nav-link">Activities</a>
+      </li>
+       <li class="nav-item">
+        <a href="#" class="nav-link">About</a>
+      </li>
+       <li class="nav-item">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="carousel slide" id="slides" data-ride="carousel">
+ 
+  <ul class="carousel-indicators">
+    <li data-target="#slides" data-slide-to="0" class="active"></li>
+    <li data-target="#slides" data-slide-to="1" ></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/himalaya.jpg" alt="">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Welcome to NEPAL!</h5>
+        <p>NEPAL is a land of beautiful mountains. NEPAL is a land of beautiful mountains. NEPAL is a land of beautiful mountains. </p>
       </div>
     </div>
-    </nav>
-    
- 
+    <div class="carousel-item">
+      <img src="images/lake.jpg" alt="">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Welcome to NEPAL!</h5>
+        <p>NEPAL is a land of beautiful mountains. NEPAL is a land of beautiful mountains. NEPAL is a land of beautiful mountains. </p>
+      </div>
+    </div>
+  </div>
+  
+</div>
 
+<!-- jumbotron -->
+<div class="container-fluid">
+<div class="row jumbotron">
+  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+    <p class="lead">The web hosting allows individual and organization to make their website accessable from wrold wide web</p>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+    <a href="#"><button type="button" class="btn btn-primary btn-lg">Web Hosting</button></a>
+  </div>
+</div>
+</div>
+<!-- eof jumbotron -->
+<!-- welcome -->
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-12">
+      <h1>Built with ease</h1>
+    </div>
+    <hr>
+    <div class="col-12">
+      <p class="lead">Welcome to bootstrap4 tutorial.Bootstrap is free and open source front-end library with HTML and CSS based design.</p>
+    </div>
+  </div>
+</div>
+<!-- eof welcome -->
+<!-- three column section -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+       <i class="fas fa-code">
+       <h3>HTML</h3>
+       <p>Built with HTML latest version</p></i>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+       <i class="fas fa-bold">
+       <h3>Bootstrap</h3>
+       <p>Built with Bootstrap latest version</p></i>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg">
+       <i class="fab fa-angellist"></i>
+       <h3>HTML</h3>
+       <p>Built with HTML latest version</p>
+    </div>
+  </div>
+</div>
+<!-- eof -->
+<!-- cards -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="card">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </body>
+
+
+
+
 </html>
